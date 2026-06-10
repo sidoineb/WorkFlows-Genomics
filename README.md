@@ -14,6 +14,12 @@ Bienvenue dans ce cabinet de curiosités numériques. Ce dépôt abrite une coll
 
 ---
 
+## 📚 License
+
+Ces Workflows Galaxy sont enregistrés sous GNU GENERAL PUBLIC LICENSE
+
+---
+
 ## 📜 Note de l'Alchimiste
 
 La science est un voyage autant qu'une destination. Ces workflows sont des outils de base ; n'hésitez pas à modifier les paramètres des outils (`Trimmomatic`, `BWA-MEM`) selon la nature de vos données.
