@@ -9,7 +9,7 @@ Bienvenue dans ce cabinet de curiosités numériques. Ce dépôt abrite une coll
 | Nom du Workflow | Description | Outil Principal |
 | :--- | :--- | :--- |
 | `Aliivibrio_fischeri_luxA.ga` | Analyse phylogénétique et recherche de gènes. | BLAST+ |
-| `Yeast_Mapper.ga` | QC, nettoyage et alignement génomique. | BWA-MEM |
+| `Yeast-Sample.ga` | QC, nettoyage et alignement génomique. | BWA-MEM |
 | `Salmonella_-_IMT-Sid.ga`| Premier essai sur Salmonella lors de ma formation | BLAST+ |
 
 ---
