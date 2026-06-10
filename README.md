@@ -16,7 +16,7 @@ Bienvenue dans ce cabinet de curiosités numériques. Ce dépôt abrite une coll
 
 ## 📚 License
 
-Ces Workflows Galaxy sont enregistrés sous GNU GENERAL PUBLIC LICENSE
+Ces Workflows Galaxy sont enregistrés sous GNU GENERAL PUBLIC LICENSE 3.0
 
 ---
 
