@@ -1,4 +1,4 @@
-# 🧬 Archives Génomiques : Sidoine B. 🌌
+# 🧬 Archives Génomiques de Sidoine B. 🌌
 
 Bienvenue dans ce cabinet de curiosités numériques. Ce dépôt abrite une collection de workflows bioinformatiques conçus pour la plateforme **Galaxy**. Ici, les séquences brutes du vivant sont transformées en connaissances exploitables.
 
@@ -26,6 +26,3 @@ La science est un voyage autant qu'une destination. Ces workflows sont des outil
 Les fichiers de séquences sont stockés dans le répertoire DATA.
 
 Enjoy ;)
-
----
-*Projet maintenu avec passion par Sidoine B.*
