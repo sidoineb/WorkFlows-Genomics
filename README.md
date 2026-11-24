@@ -10,6 +10,7 @@ Bienvenue dans ce cabinet de curiosités numériques. Ce dépôt abrite une coll
 | :--- | :--- | :--- |
 | `Aliivibrio_fischeri_luxA.ga` | Analyse phylogénétique et recherche de gènes. | BLAST+ |
 | `Yeast-Sample.ga` | QC, nettoyage et alignement génomique. | BWA-MEM |
+| `AMR_Scanner.ga` | Détection de gènes de résistance aux antibiotiques et de plasmides. | ABRicate & PlasmidFinder |
 | `Salmonella_-_IMT-Sid.ga`| Premier essai sur Salmonella lors de ma formation | BLAST+ |
 
 ---
