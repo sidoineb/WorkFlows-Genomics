@@ -1,0 +1,136 @@
+{
+    "a_galaxy_workflow": "true",
+    "annotation": "D\u00e9tection de R\u00e9sistance aux Antibiotiques et de Virulence",
+    "comments": [],
+    "format-version": "0.1",
+    "license": "AGPL-3.0-or-later",
+    "name": "AMR_Scanner",
+    "report": {
+        "markdown": "\n# Workflow Execution Report\n\n## Workflow Inputs\n```galaxy\ninvocation_inputs()\n```\n\n## Workflow Outputs\n```galaxy\ninvocation_outputs()\n```\n\n## Workflow\n```galaxy\nworkflow_display()\n```\n"
+    },
+    "steps": {
+        "0": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 0,
+            "input_connections": {},
+            "inputs": [],
+            "label": null,
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 0.0,
+                "top": 52.0078125
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false, \"format\": [\"fasta\"], \"tag\": null}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "3ed913da-b0ff-48e5-99d3-55c5ac54f4ce",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "1": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/abricate/abricate/1.4.0+galaxy1",
+            "errors": null,
+            "id": 1,
+            "input_connections": {
+                "file_input": {
+                    "id": 0,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "ABRicate",
+            "outputs": [
+                {
+                    "name": "report",
+                    "type": "tabular"
+                }
+            ],
+            "position": {
+                "left": 282.328125,
+                "top": 0.0
+            },
+            "post_job_actions": {},
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/abricate/abricate/1.4.0+galaxy1",
+            "tool_shed_repository": {
+                "changeset_revision": "d8b0de0554a9",
+                "name": "abricate",
+                "owner": "iuc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"adv\": {\"db\": \"card\", \"no_header\": false, \"min_dna_id\": \"80.0\", \"min_cov\": \"80.0\"}, \"file_input\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+            "tool_uuid": null,
+            "tool_version": "1.4.0+galaxy1",
+            "type": "tool",
+            "uuid": "89d70999-1f7b-4075-9f3c-6a02b6a2c43a",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "2": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/plasmidfinder/plasmidfinder/3.0.3+galaxy0",
+            "errors": null,
+            "id": 2,
+            "input_connections": {
+                "input|reads|input_file": {
+                    "id": 0,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "PlasmidFinder",
+            "outputs": [
+                {
+                    "name": "hit_file",
+                    "type": "fasta"
+                },
+                {
+                    "name": "plasmid_file",
+                    "type": "fasta"
+                },
+                {
+                    "name": "result_file",
+                    "type": "tabular"
+                },
+                {
+                    "name": "raw_file",
+                    "type": "txt"
+                }
+            ],
+            "position": {
+                "left": 287.41796875,
+                "top": 227.00390625
+            },
+            "post_job_actions": {},
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/plasmidfinder/plasmidfinder/3.0.3+galaxy0",
+            "tool_shed_repository": {
+                "changeset_revision": "8621b220c13e",
+                "name": "plasmidfinder",
+                "owner": "iuc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"input\": {\"reads\": {\"type\": \"single\", \"__current_case__\": 0, \"input_file\": {\"__class__\": \"ConnectedValue\"}}, \"database_name\": \"plasmidfinder_81c11f4_2023_12_04\"}, \"options\": {\"min_cov\": \"0.6\", \"threshold\": \"0.95\"}, \"output_files\": {\"output_format\": \"old\", \"output_selection\": [\"hit_fasta\", \"plasmid_fasta\", \"result_tsv\", \"result_txt\"]}, \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+            "tool_uuid": null,
+            "tool_version": "3.0.3+galaxy0",
+            "type": "tool",
+            "uuid": "6ba74ffc-fe21-4d82-bd0a-9c8d2fd27507",
+            "when": null,
+            "workflow_outputs": [
+                {
+                    "label": "plasmid_file",
+                    "output_name": "plasmid_file",
+                    "uuid": "1609e5a2-f803-40fd-9926-dcf08efb295b"
+                }
+            ]
+        }
+    },
+    "tags": [],
+    "uuid": "ddf8a65b-6e15-486a-a15e-31b5130535cf",
+    "version": 0
+}
